@@ -1,0 +1,31 @@
+{
+  "name": "discord-bot-ts",
+  "version": "1.0.0",
+  "description": "## Bien débuté - Pré-requis : node TLS (v18.18 actuellement) - Cloner la branche testing - Initialiser le projet avec `npm ci` - Copier/coller le fichier `.env.exemple` et renommé le `.env` puis compléter",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oxyrobit/Discord-bot-ts.git"
+  },
+  "author": "oxyrobit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oxyrobit/Discord-bot-ts/issues"
+  },
+  "homepage": "https://github.com/Oxyrobit/Discord-bot-ts#readme",
+  "dependencies": {
+    "discord-api-types": "^0.37.83",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "moment": "^2.30.1",
+    "mongoose": "^8.3.2"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.3",
+    "typescript": "^5.4.5"
+  }
+}
