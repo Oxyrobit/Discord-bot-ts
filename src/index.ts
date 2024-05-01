@@ -29,7 +29,7 @@ folders.forEach(folder => {
   process.stdout.write(`[${moment().format('HH:mm:ss')}] 🔵 Chargement de ${folder}`)
   const files = readdirSync(`${appsDir}/${folder}`, {encoding: 'utf-8', recursive: true}).filter(file => file.endsWith('.js'))
   files.forEach(async file => {
-    const module: BotEvent | SlashCommand | undefined = (await import(`${appsDir}\\${folder}\\${file}`)).default
+    const module: BotEvent | SlashCommand | undefined = (await import(`${appsDir}/${folder}/${file}`)).default
     
     if (!module){
       //process.stdout.write(`[${moment().format('HH:mm:ss')}] 🔴 Impossible de charger le module ${file}\n`)
