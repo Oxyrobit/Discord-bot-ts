@@ -1,4 +1,4 @@
-# Discord Bot
+# Discord Bot ( discord.js v14.15 )
 
 ## Getting Started
 - Prerequisites: node LTS (currently v18.18)
