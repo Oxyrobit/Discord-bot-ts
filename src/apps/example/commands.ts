@@ -5,6 +5,7 @@ const command: SlashCommand = {
   name: 'setactivity', // Define the command name.
   guilds: [process.env.MAIN_GUILD_ID, "GUILD_ID"], // Specify which guild(s) the command is for, using the guild ID stored in the environment variables. Set "False" for ALL GUILDS
   data: new SlashCommandBuilder() // Set up the command data using SlashCommandBuilder.
+    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator) // Set default permissions for this command to Administrator only.
     .setName("setactivity")
     .setDescription("Change bot activity")
     .addStringOption((option) => {
@@ -24,8 +25,7 @@ const command: SlashCommand = {
           { name: 'Listening', value: `${ActivityType.Listening}` },
           { name: 'Watching', value: `${ActivityType.Watching}` }
         );
-    })
-    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator), // Set default permissions for this command to Administrator only.
+    }),
     execute: async (interaction) => {
         // The function body starts here.
         const client = interaction.client;

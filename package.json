@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Oxyrobit/Discord-bot-ts#readme",
   "dependencies": {
     "discord-api-types": "^0.37.83",
-    "discord.js": "^14.14.1",
+    "discord.js": "^14.15.1",
     "dotenv": "^16.4.5",
     "moment": "^2.30.1",
     "mongoose": "^8.3.2"
