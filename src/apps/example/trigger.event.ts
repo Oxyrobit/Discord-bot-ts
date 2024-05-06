@@ -13,7 +13,7 @@ const event: BotEvent = {
         // This function will be executed when the client is ready.
         // 'client' parameter refers to the instance of the Client that is ready.
 
-        console.log('Im ready !')
+        console.log('Hello World !')
   
   
     }
